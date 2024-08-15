@@ -24,7 +24,7 @@ def show_analise_por_idade():
     st.write("Com isso, nota-se que é muito importante o atendimento à crianças de 6 à 12 anos, pois com uma melhor influência podem não se limitar às possibilidades oferecidas em um ambiente de vulnerabilidade social.")
 
 def show_1():    
-    dt = pd.read_csv("alunoPorIdade2021.csv", sep = ';')
+    dt = pd.read_csv("https://raw.githubusercontent.com/dev-roliveira/Datathon/master/Streamlit/alunoPorIdade2021.csv", sep = ';')
     bar_1 = go.Bar(
         x = dt['IDADE'],
         y = dt['ALUNO_POR_IDADE'],
@@ -42,7 +42,7 @@ def show_1():
     st.plotly_chart(fig)
 
 def show_2():
-    dt = pd.read_csv("alunoPorIdade2022.csv", sep = ';')
+    dt = pd.read_csv("https://raw.githubusercontent.com/dev-roliveira/Datathon/master/Streamlit/alunoPorIdade2022.csv", sep = ';')
     bar_1 = go.Bar(
         x = dt['IDADE'],
         y = dt['ALUNO_POR_IDADE'],
@@ -60,7 +60,7 @@ def show_2():
     st.plotly_chart(fig)
 
 def show_3():
-    dt = pd.read_csv("alunoPorIdade2023.csv", sep = ';')
+    dt = pd.read_csv("https://raw.githubusercontent.com/dev-roliveira/Datathon/master/Streamlit/alunoPorIdade2023.csv", sep = ';')
     bar_1 = go.Bar(
         x = dt['IDADE'],
         y = dt['ALUNO_POR_IDADE'],
@@ -78,7 +78,7 @@ def show_3():
     st.plotly_chart(fig)
 
 def show_4():
-    dt = pd.read_csv("alunoPorIdade2024.csv", sep = ';')
+    dt = pd.read_csv("https://raw.githubusercontent.com/dev-roliveira/Datathon/master/Streamlit/alunoPorIdade2024.csv", sep = ';')
     bar_1 = go.Bar(
         x = dt['IDADE'],
         y = dt['ALUNO_POR_IDADE'],
