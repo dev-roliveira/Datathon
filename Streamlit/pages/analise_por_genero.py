@@ -15,7 +15,7 @@ def show_analise_por_genero():
     show_2()
 
 def show_1():    
-    dt = pd.read_csv("generoTotal.csv", sep = ';')
+    dt = pd.read_csv("Streamlit/generoTotal.csv", sep = ';')
     bar_1 = go.Bar(
         x = dt['Sexo'],
         y = dt['Porcentagem'],
