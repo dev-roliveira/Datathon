@@ -15,7 +15,7 @@ def show_analise_por_genero():
     show_2()
 
 def show_1():    
-    dt = pd.read_csv("Streamlit/generoTotal.csv", sep = ';')
+    dt = pd.read_csv("https://raw.githubusercontent.com/dev-roliveira/Datathon/master/Streamlit/generoTotal.csv", sep = ';')
     bar_1 = go.Bar(
         x = dt['Sexo'],
         y = dt['Porcentagem'],
@@ -33,7 +33,7 @@ def show_1():
     st.plotly_chart(fig)
 
 def show_2():
-    dt = pd.read_csv("EvolucaoGeneroPorAno.csv", sep = ';')
+    dt = pd.read_csv("https://raw.githubusercontent.com/dev-roliveira/Datathon/master/Streamlit/EvolucaoGeneroPorAno.csv", sep = ';')
     dt['ANO'] = pd.to_datetime(dt['ANO']).dt.year
 
     fig = px.bar(dt, x=dt['ANO'], y=dt['TOTAL'], color=dt['GENERO'], title="Evolução de Alunos por Gênero")
